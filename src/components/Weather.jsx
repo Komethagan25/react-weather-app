@@ -17,6 +17,7 @@ function Weather() {
       
       const response = await axios.get(url);
       setWeatherData(response.data);
+      setCity("")
     } catch (err) {
       setWeatherData(null);
       setError("City not found or API error!");
