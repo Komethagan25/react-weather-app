@@ -1,16 +1,45 @@
-# React + Vite
+# 🌍 Weather Report App (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather application built using **React JS** that allows users to search and view real-time weather information for any city using the **OpenWeatherMap API**.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## React Compiler
+- Search weather by city name  
+- Displays temperature in Celsius  
+- Shows current weather condition  
+- Displays humidity level  
+- Shows wind speed  
+- Error handling for invalid city names or API issues
+- 
+##  Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React JS** (Functional Components & Hooks)  
+- **Axios** for API requests  
+- **CSS** 
+- **OpenWeatherMap API**
 
-## Expanding the ESLint configuration
+## API Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This project uses the **OpenWeatherMap Current Weather API**.
+
+Example API request:
+
+https://api.openweathermap.org/data/2.5/weather?q=London&appid=YOUR_API_KEY&units=metric
+
+
+##  Example Cities to Try
+
+- London  
+- Chennai  
+- Mumbai  
+- New York  
+
+
+##  Future Improvements
+
+- 5-day weather forecast  
+- Detect user location automatically  
+- 🎨 Dynamic background based on weather  
+- 🌓 Day/Night theme mode  
+
