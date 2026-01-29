@@ -1,7 +1,9 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #74ebd5, #9face6);
+  background: linear-gradient(-45deg, #74ebd5, #9face6, #74ebd5, #9face6);
+  background-size: 400% 400%;
+  animation: gradientMove 5s ease infinite;
 }
 
 .app {
@@ -16,7 +18,7 @@ body {
   padding: 25px;
   border-radius: 12px;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   text-align: center;
   box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
@@ -40,16 +42,28 @@ body {
   color: white;
   border: none;
   border-radius: 4px;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 .search-box button:hover {
   background-color: rgba(0, 0, 255, 0.9);
 }
 
+.search-box button:active {
+  transform: scale(0.95);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2) inset;
+}
+
 .weather-card {
   margin-top: 15px;
-  background: #f1f1f1;
+  background: #4CDE81;
   padding: 15px;
+  padding-left: 20px;
   border-radius: 8px;
+  font-size: 18px;
+}
+.weather-card p {
+  text-align: left;
+  margin-left: 50px;
 }
 
 .error {
@@ -62,4 +76,10 @@ body {
   .weather-container {
     width: 90%;
   }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
